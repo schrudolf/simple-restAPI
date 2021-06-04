@@ -1,2 +1,4 @@
-# nodejs-ts-api
-Nodejs API with TypeScript
+# nodejs-ts-restAPI
+
+Node.js restAPI with TypeScript
+
