@@ -1,5 +1,5 @@
 import dotenv from 'dotenv'
-import express, { json } from 'express';
+import express from 'express';
 import dbConnect from "./database/mongoConnect"; // mongoDB connection
 import mainRoutes from "./routes/routes"; // Routes
 const app = express();

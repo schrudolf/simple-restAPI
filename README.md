@@ -6,6 +6,6 @@ CRUD API
 
 Create: done
 Read: done
-Update: coming soon
+Update: done
 Delete : coming soon
 
