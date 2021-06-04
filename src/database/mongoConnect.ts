@@ -1,29 +1,16 @@
-import mongodb from "mongodb";
-const MongoClient = mongodb.MongoClient;
-import assert from "assert";
+import mongoose from 'mongoose';
 
-export default function () {
-    return new Promise< any >((resolve, reject) => {
+export default async function () {
         try {
-            // Connection URL
-            const url = process.env.MONGO_CONNECTION_STRING || 'mongodb://localhost:27017';
-            // Database Name
-            const dbName = 'restAPI';
-            const client = new MongoClient(url, {
-                useUnifiedTopology: true
+            await mongoose.connect(process.env.MONGO_CONNECTION_STRING ||'mongodb://localhost/my_database', {
+                useNewUrlParser: true,
+                useUnifiedTopology: true,
+                useFindAndModify: false,
+                useCreateIndex: true
             });
-            // Use connect method to connect to the server
-            client.connect(function (err) {
-                assert.equal(null, err);
-                if (err) {
-                    throw new Error("Failed Database Connection")
-                }
-                const db = client.db(dbName);
-                client.close();
-                resolve(console.log('Database connection succefull'))
-            });
+            return console.log("Database connection succefull")
+            
         } catch (err) {
-            reject(err)
+            console.log(err)
         }
-    })
 }

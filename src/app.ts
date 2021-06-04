@@ -9,10 +9,8 @@ const HOST: string = process.env.HOST || "localhost";
 const PORT: number = Number(process.env.PORT || 3000);
 
 async function startApp(){
-    // Database connection
-    await dbConnect();
-    // Load routes
-    mainRoutes(app)
+    await dbConnect(); // Database connection
+    mainRoutes(app) // Load routes
     app.listen(PORT, HOST, () => {
         console.log("Server is listening on " + "http://" + HOST + ":" + PORT)
     })
