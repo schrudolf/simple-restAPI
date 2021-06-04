@@ -1,10 +1,10 @@
-# nodejs-ts-restAPI
+# Simple NodeJs RestAPI with CRUD
 
-Node.js restAPI with TypeScript and mongoDB/mongoose
+using mongoDB/mongoose
 
 CRUD API
 
-Create: coming soon
+Create: done
 Read: done
 Update: coming soon
 Delete : coming soon
