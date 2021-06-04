@@ -1,4 +1,4 @@
 # nodejs-ts-restAPI
 
-Node.js restAPI with TypeScript
+Node.js restAPI with TypeScript and mongoDB
 
