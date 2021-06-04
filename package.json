@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-ts-api",
+  "version": "1.0.0",
+  "description": "Nodejs API with TypeScript",
+  "main": "build/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schrudolf/nodejs-ts-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schrudolf/nodejs-ts-api/issues"
+  },
+  "homepage": "https://github.com/schrudolf/nodejs-ts-api#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.12.0"
+  }
+}
